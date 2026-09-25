@@ -110,7 +110,8 @@
 
     <!-- PAGE 1: HOME PAGE -->
     <main id="home" class="page-view active flex-grow">
-        <section class="relative min-h-screen flex items-center pt-24 sm:pt-28 pb-16">
+        <!-- Increased top padding (pt-36 sm:pt-48 md:pt-56) to move "ELKAN SHEAL" further down from the nav bar -->
+        <section class="relative min-h-screen flex items-center pt-36 sm:pt-48 md:pt-56 pb-16">
             <div class="absolute inset-0 z-0 overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?q=80&w=1600&auto=format&fit=crop" alt="Colombo Sri Lanka Skyline" class="w-full h-full object-cover opacity-25 scale-105">
                 <div class="absolute inset-0 bg-gradient-to-r from-stealthBg via-stealthBg/80 to-transparent"></div>
@@ -119,7 +120,7 @@
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 z-10 w-full">
                 <div class="max-w-3xl">
-                    <h1 class="text-4xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-6 leading-none text-white">
+                    <h1 class="text-4xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-6 leading-none text-white mt-4 sm:mt-8">
                         ELKAN SHEAL <br/>
                         <span class="text-platinumMuted font-light">SAMUEL</span>
                     </h1>
@@ -192,13 +193,17 @@
                         <div class="flex flex-col items-start lg:items-end">
                             <span class="text-[10px] font-mono uppercase tracking-widest text-platinumMuted mb-4 block">SOCIAL MEDIA</span>
                             <div class="flex items-center gap-3">
-                                <a href="https://www.instagram.com/elkanrealtylanka/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-stealthCard border border-stealthBorder rounded-xl flex items-center justify-center text-platinumMuted hover:text-white hover:border-platinumMuted transition-all">
+                                <!-- LinkedIn Added Here -->
+                                <a href="https://www.linkedin.com/in/elkan-sheal-samuel-579513358/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-stealthCard border border-stealthBorder rounded-xl flex items-center justify-center text-platinumMuted hover:text-white hover:border-platinumMuted transition-all" aria-label="LinkedIn Profile">
+                                    <i class="fab fa-linkedin-in text-lg"></i>
+                                </a>
+                                <a href="https://www.instagram.com/elkanrealtylanka/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-stealthCard border border-stealthBorder rounded-xl flex items-center justify-center text-platinumMuted hover:text-white hover:border-platinumMuted transition-all" aria-label="Instagram Profile">
                                     <i class="fab fa-instagram text-lg"></i>
                                 </a>
-                                <a href="https://www.snapchat.com/add/elkansheal18" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-stealthCard border border-stealthBorder rounded-xl flex items-center justify-center text-platinumMuted hover:text-white hover:border-platinumMuted transition-all">
+                                <a href="https://www.snapchat.com/add/elkansheal18" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-stealthCard border border-stealthBorder rounded-xl flex items-center justify-center text-platinumMuted hover:text-white hover:border-platinumMuted transition-all" aria-label="Snapchat Profile">
                                     <i class="fab fa-snapchat text-lg"></i>
                                 </a>
-                                <a href="https://www.facebook.com/people/Elkan-Sheal-Lavinia/61583745082300/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-stealthCard border border-stealthBorder rounded-xl flex items-center justify-center text-platinumMuted hover:text-white hover:border-platinumMuted transition-all">
+                                <a href="https://www.facebook.com/people/Elkan-Sheal-Lavinia/61583745082300/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-stealthCard border border-stealthBorder rounded-xl flex items-center justify-center text-platinumMuted hover:text-white hover:border-platinumMuted transition-all" aria-label="Facebook Profile">
                                     <i class="fab fa-facebook-f text-lg"></i>
                                 </a>
                             </div>
@@ -232,7 +237,7 @@
                 </div>
             </div>
 
-            <!-- HERO FEATURED LISTING CARD (SHOWS ONLY WHEN "ALL HOLDINGS" IS SELECTED) -->
+            <!-- HERO FEATURED LISTING CARD -->
             <div id="flagship-hero-card" class="property-card coastal relative rounded-2xl sm:rounded-3xl overflow-hidden glass-stealth border border-stealthBorder mb-12 sm:mb-16 group">
                 <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[450px] sm:min-h-[500px]">
                     <div class="lg:col-span-7 relative overflow-hidden min-h-[260px] sm:min-h-[320px]">
@@ -672,7 +677,7 @@
                 title: "Negombo Road Commercial HQ",
                 category: "Office Building",
                 tag: "WATTALA TOWN • 8,500 SQFT",
-                image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1200&auto=format&fit=crop",
+                image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=800&auto=format&fit=crop",
                 desc: "Prime multi-story commercial office building in central Wattala facing main Negombo Road with prime road frontage and private parking.",
                 zoning: "Office & Retail",
                 acreage: "8,500 Sq. Ft.",
@@ -704,7 +709,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Category Filter Logic (Fixed scroll jump + hero showcase hide behavior)
+        // Category Filter Logic
         function filterCategory(category, button) {
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => {
