@@ -80,8 +80,8 @@
 
     <!-- Navigation Header -->
     <nav class="fixed w-full z-50 glass-stealth border-b border-stealthBorder">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-lg font-mono font-bold tracking-wider cursor-pointer flex items-center gap-3" onclick="navigate('home')">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <div class="text-base sm:text-lg font-mono font-bold tracking-wider cursor-pointer flex items-center gap-2 sm:gap-3" onclick="navigate('home')">
                 ELKAN SAMUEL
                 <span class="text-xs font-sans text-platinumMuted font-normal hidden sm:inline-block">| Property Consultant</span>
             </div>
@@ -89,7 +89,6 @@
             <div class="hidden md:flex items-center space-x-8 text-xs font-mono uppercase tracking-widest text-platinumMuted">
                 <button onclick="navigate('home')" class="hover:text-white transition-colors nav-link py-1" data-target="home">Home</button>
                 <button onclick="navigate('realestate')" class="hover:text-white transition-colors nav-link py-1" data-target="realestate">Land Portfolio</button>
-                <button onclick="navigate('training')" class="hover:text-white transition-colors nav-link py-1" data-target="training">Performance Journal</button>
                 <button onclick="openInquiryModal('all')" class="px-4 py-2 bg-stealthCard border border-stealthBorder text-white hover:border-platinumAccent rounded-lg transition-all">
                     Inquire
                 </button>
@@ -104,7 +103,6 @@
             <div class="flex flex-col px-6 py-6 space-y-4 text-xs font-mono tracking-widest uppercase">
                 <button onclick="navigate('home'); closeMobileMenu()" class="text-left text-platinumMuted hover:text-white">Home</button>
                 <button onclick="navigate('realestate'); closeMobileMenu()" class="text-left text-platinumMuted hover:text-white">Land Portfolio</button>
-                <button onclick="navigate('training'); closeMobileMenu()" class="text-left text-platinumMuted hover:text-white">Performance Journal</button>
                 <button onclick="openInquiryModal('all'); closeMobileMenu()" class="text-left text-white font-bold">Direct Inquiry</button>
             </div>
         </div>
@@ -112,60 +110,60 @@
 
     <!-- PAGE 1: HOME PAGE -->
     <main id="home" class="page-view active flex-grow">
-        <section class="relative min-h-screen flex items-center pt-28 pb-16">
+        <section class="relative min-h-screen flex items-center pt-24 sm:pt-28 pb-16">
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Real Estate Architecture" class="w-full h-full object-cover opacity-20 scale-105">
+                <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?q=80&w=1600&auto=format&fit=crop" alt="Colombo Sri Lanka Skyline" class="w-full h-full object-cover opacity-25 scale-105">
                 <div class="absolute inset-0 bg-gradient-to-r from-stealthBg via-stealthBg/80 to-transparent"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-stealthBg via-stealthBg/60 to-transparent"></div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-6 z-10 w-full">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 z-10 w-full">
                 <div class="max-w-3xl">
-                    <h1 class="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-6 leading-none text-white">
+                    <h1 class="text-4xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-6 leading-none text-white">
                         ELKAN SHEAL <br/>
                         <span class="text-platinumMuted font-light">SAMUEL</span>
                     </h1>
                     
-                    <p class="text-lg sm:text-xl font-light text-platinumMuted mb-10 leading-relaxed border-l border-stealthBorder pl-4">
-                        Advising high-net-worth investors, institutional funds, and private buyers on high-yield land acquisitions and prime real estate portfolios.
+                    <p class="text-base sm:text-xl font-light text-platinumMuted mb-10 leading-relaxed border-l border-stealthBorder pl-4">
+                        Advising high-net-worth investors, institutional funds, and private buyers on high-yield land acquisitions, office spaces, and prime real estate portfolios across Colombo and Wattala, Sri Lanka.
                     </p>
 
-                    <div class="grid grid-cols-3 gap-6 mb-10 border-y border-stealthBorder py-6 font-mono">
+                    <div class="grid grid-cols-3 gap-2 sm:gap-6 mb-10 border-y border-stealthBorder py-6 font-mono">
                         <div>
-                            <span class="text-3xl sm:text-4xl font-bold text-white">$600M+</span>
-                            <span class="block text-[10px] uppercase tracking-widest text-platinumMuted mt-1">Volume Transacted</span>
+                            <span class="text-2xl sm:text-4xl font-bold text-white">$600M+</span>
+                            <span class="block text-[9px] sm:text-[10px] uppercase tracking-widest text-platinumMuted mt-1">Volume Transacted</span>
                         </div>
                         <div>
-                            <span class="text-3xl sm:text-4xl font-bold text-white">150+</span>
-                            <span class="block text-[10px] uppercase tracking-widest text-platinumMuted mt-1">Acres Secured</span>
+                            <span class="text-2xl sm:text-4xl font-bold text-white">150+</span>
+                            <span class="block text-[9px] sm:text-[10px] uppercase tracking-widest text-platinumMuted mt-1">Acres Secured</span>
                         </div>
                         <div>
-                            <span class="text-3xl sm:text-4xl font-bold text-white">100%</span>
-                            <span class="block text-[10px] uppercase tracking-widest text-platinumMuted mt-1">Confidential Record</span>
+                            <span class="text-2xl sm:text-4xl font-bold text-white">100%</span>
+                            <span class="block text-[9px] sm:text-[10px] uppercase tracking-widest text-platinumMuted mt-1">Confidential Record</span>
                         </div>
                     </div>
                     
-                    <div class="flex flex-wrap gap-4 mb-24">
-                        <button onclick="navigate('realestate')" class="px-8 py-4 bg-platinumAccent text-stealthBg font-semibold rounded-xl hover:bg-white transition-all text-xs font-mono uppercase tracking-widest">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-16 sm:mb-24">
+                        <button onclick="navigate('realestate')" class="w-full sm:w-auto px-8 py-4 bg-platinumAccent text-stealthBg font-semibold rounded-xl hover:bg-white transition-all text-xs font-mono uppercase tracking-widest">
                             Explore Land Portfolio
                         </button>
-                        <button onclick="openInquiryModal('all')" class="px-8 py-4 glass-stealth text-white font-semibold rounded-xl hover:border-platinumAccent transition-all text-xs font-mono uppercase tracking-widest">
+                        <button onclick="openInquiryModal('all')" class="w-full sm:w-auto px-8 py-4 glass-stealth text-white font-semibold rounded-xl hover:border-platinumAccent transition-all text-xs font-mono uppercase tracking-widest">
                             Schedule Advisory Call
                         </button>
                     </div>
                 </div>
 
                 <!-- DIRECT INQUIRY & CONTACTS SECTION -->
-                <div class="border-t border-stealthBorder/60 pt-16 pb-12">
+                <div class="border-t border-stealthBorder/60 pt-12 sm:pt-16 pb-12">
                     <span class="text-xs font-mono uppercase tracking-widest text-platinumMuted font-semibold block mb-3">DIRECT INQUIRY</span>
                     
                     <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
                         <div class="max-w-xl">
-                            <h2 class="text-4xl md:text-5xl font-serif mb-6 text-white leading-tight">
+                            <h2 class="text-3xl sm:text-5xl font-serif mb-6 text-white leading-tight">
                                 Let's <span class="italic text-platinumMuted">Connect</span>
                             </h2>
-                            <p class="text-platinumMuted text-sm font-light leading-relaxed mb-8">
-                                Whether you are looking for elite digital strategy, consulting, booking 1-on-1 athletic coaching, or real estate advisory—reach out directly.
+                            <p class="text-platinumMuted text-xs sm:text-sm font-light leading-relaxed mb-8">
+                                Whether you are looking for prime land, commercial hubs, office spaces, or advisory in Colombo and Wattala—reach out directly.
                             </p>
 
                             <div class="space-y-3 max-w-md">
@@ -175,7 +173,7 @@
                                     </div>
                                     <div>
                                         <span class="block text-[9px] font-mono uppercase tracking-widest text-platinumMuted">WHATSAPP DIRECT</span>
-                                        <span class="text-sm font-mono font-bold text-white tracking-wide">+94 76 486 0557</span>
+                                        <span class="text-xs sm:text-sm font-mono font-bold text-white tracking-wide">+94 76 486 0557</span>
                                     </div>
                                 </a>
 
@@ -185,7 +183,7 @@
                                     </div>
                                     <div>
                                         <span class="block text-[9px] font-mono uppercase tracking-widest text-platinumMuted">OFFICIAL EMAIL</span>
-                                        <span class="text-sm font-mono font-bold text-white tracking-wide">edithshamaiah11@gmail.com</span>
+                                        <span class="text-xs sm:text-sm font-mono font-bold text-white tracking-wide">edithshamaiah11@gmail.com</span>
                                     </div>
                                 </a>
                             </div>
@@ -212,47 +210,48 @@
         </section>
     </main>
 
-    <!-- PAGE 2: HIGH-END LAND PORTFOLIO -->
-    <main id="realestate" class="page-view pt-28 pb-20 flex-grow">
-        <div class="max-w-7xl mx-auto px-6">
+    <!-- PAGE 2: LAND PORTFOLIO -->
+    <main id="realestate" class="page-view pt-24 sm:pt-28 pb-20 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
             
-            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 pb-8 border-b border-stealthBorder gap-6">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 sm:mb-12 pb-8 border-b border-stealthBorder gap-6">
                 <div>
-                    <span class="text-xs font-mono text-platinumMuted uppercase tracking-widest block mb-2">CURATED ASSET PORTFOLIO</span>
-                    <h1 class="text-4xl md:text-6xl font-bold text-white">Prime Land <span class="text-platinumMuted font-serif italic">Holdings</span></h1>
-                    <p class="text-platinumMuted font-light text-sm max-w-xl mt-3 leading-relaxed">
-                        Exclusive commercial acreage, beachfront hotel zoning, and private compound parcels held under strict confidentiality.
+                    <span class="text-xs font-mono text-platinumMuted uppercase tracking-widest block mb-2">CURATED SRI LANKAN PORTFOLIO</span>
+                    <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold text-white">Prime Sri Lanka <span class="text-platinumMuted font-serif italic">Properties</span></h1>
+                    <p class="text-platinumMuted font-light text-xs sm:text-sm max-w-xl mt-3 leading-relaxed">
+                        Exclusive commercial acreage, beachfront hotel zoning, residential land, and prime office spaces in Colombo and Wattala, Sri Lanka.
                     </p>
                 </div>
 
-                <div class="flex flex-wrap gap-2 font-mono text-xs" id="filter-container">
-                    <button onclick="filterCategory('all', this)" class="filter-btn px-4 py-2 rounded-lg bg-white text-stealthBg font-semibold shadow-lg transition-all">All Holdings</button>
-                    <button onclick="filterCategory('coastal', this)" class="filter-btn px-4 py-2 rounded-lg glass-stealth text-platinumMuted hover:text-white border border-stealthBorder transition-all">Coastal & Resorts</button>
-                    <button onclick="filterCategory('commercial', this)" class="filter-btn px-4 py-2 rounded-lg glass-stealth text-platinumMuted hover:text-white border border-stealthBorder transition-all">Commercial</button>
-                    <button onclick="filterCategory('enclave', this)" class="filter-btn px-4 py-2 rounded-lg glass-stealth text-platinumMuted hover:text-white border border-stealthBorder transition-all">Private Enclaves</button>
+                <div class="flex flex-wrap gap-2 font-mono text-[11px] sm:text-xs" id="filter-container">
+                    <button onclick="filterCategory('all', this)" class="filter-btn px-3 sm:px-4 py-2 rounded-lg bg-white text-stealthBg font-semibold shadow-lg transition-all">All Holdings</button>
+                    <button onclick="filterCategory('coastal', this)" class="filter-btn px-3 sm:px-4 py-2 rounded-lg glass-stealth text-platinumMuted hover:text-white border border-stealthBorder transition-all">Coastal & Resorts</button>
+                    <button onclick="filterCategory('commercial', this)" class="filter-btn px-3 sm:px-4 py-2 rounded-lg glass-stealth text-platinumMuted hover:text-white border border-stealthBorder transition-all">Commercial</button>
+                    <button onclick="filterCategory('office', this)" class="filter-btn px-3 sm:px-4 py-2 rounded-lg glass-stealth text-platinumMuted hover:text-white border border-stealthBorder transition-all">Office Spaces</button>
+                    <button onclick="filterCategory('enclave', this)" class="filter-btn px-3 sm:px-4 py-2 rounded-lg glass-stealth text-platinumMuted hover:text-white border border-stealthBorder transition-all">Private Enclaves</button>
                 </div>
             </div>
 
-            <!-- HERO FEATURED LISTING CARD -->
-            <div class="property-card coastal relative rounded-3xl overflow-hidden glass-stealth border border-stealthBorder mb-16 group">
-                <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">
-                    <div class="lg:col-span-7 relative overflow-hidden min-h-[320px]">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="Oceanfront Resort Sanctuary" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+            <!-- HERO FEATURED LISTING CARD (SHOWS ONLY WHEN "ALL HOLDINGS" IS SELECTED) -->
+            <div id="flagship-hero-card" class="property-card coastal relative rounded-2xl sm:rounded-3xl overflow-hidden glass-stealth border border-stealthBorder mb-12 sm:mb-16 group">
+                <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[450px] sm:min-h-[500px]">
+                    <div class="lg:col-span-7 relative overflow-hidden min-h-[260px] sm:min-h-[320px]">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="Oceanfront Resort Sanctuary Sri Lanka" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-stealthBg via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-stealthBg"></div>
-                        <span class="absolute top-6 left-6 px-3.5 py-1.5 bg-stealthBg/90 backdrop-blur-md text-white border border-stealthBorder rounded-lg text-[10px] font-mono uppercase tracking-widest font-bold">
+                        <span class="absolute top-4 left-4 sm:top-6 sm:left-6 px-3 py-1.5 bg-stealthBg/90 backdrop-blur-md text-white border border-stealthBorder rounded-lg text-[9px] sm:text-[10px] font-mono uppercase tracking-widest font-bold">
                             FLAGSHIP LISTING • 18 ACRES
                         </span>
                     </div>
 
-                    <div class="lg:col-span-5 p-8 lg:p-12 flex flex-col justify-between bg-stealthCard/80 backdrop-blur-xl">
+                    <div class="lg:col-span-5 p-6 sm:p-8 lg:p-12 flex flex-col justify-between bg-stealthCard/80 backdrop-blur-xl">
                         <div>
                             <span class="text-xs font-mono text-platinumMuted uppercase tracking-widest block mb-2">Hospitality & Resort Zoning</span>
-                            <h2 class="text-3xl font-bold text-white mb-4">Oceanfront Resort Sanctuary</h2>
+                            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Oceanfront Resort Sanctuary</h2>
                             <p class="text-platinumMuted text-xs font-light leading-relaxed mb-6">
-                                Unobstructed coastal frontage with immediate deep-sea marine access. Pre-approved for luxury 5-star hotel development, private helipad, and private marina.
+                                Unobstructed coastal frontage in Wattala with immediate marine access. Pre-approved for luxury hotel development, marina, and private beach resort.
                             </p>
 
-                            <div class="grid grid-cols-2 gap-4 border-y border-stealthBorder/60 py-4 mb-8 font-mono text-xs">
+                            <div class="grid grid-cols-2 gap-4 border-y border-stealthBorder/60 py-4 mb-6 sm:mb-8 font-mono text-xs">
                                 <div>
                                     <span class="text-platinumMuted block text-[10px] uppercase">Zoning Type</span>
                                     <span class="text-white font-bold">Commercial Hospitality</span>
@@ -262,8 +261,11 @@
                                     <span class="text-white font-bold">18.5 Clear Acres</span>
                                 </div>
                                 <div>
-                                    <span class="text-platinumMuted block text-[10px] uppercase">Coastal Frontage</span>
-                                    <span class="text-white font-bold">340 Meters</span>
+                                    <span class="text-platinumMuted block text-[10px] uppercase">Location Zone</span>
+                                    <span class="text-white font-bold">Wattala Coastal Zone</span>
+                                    <a href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" rel="noopener noreferrer" class="block text-[10px] text-blue-400 hover:underline mt-1">
+                                        <i class="fas fa-location-dot mr-1"></i>View Location Link
+                                    </a>
                                 </div>
                                 <div>
                                     <span class="text-platinumMuted block text-[10px] uppercase">Status</span>
@@ -272,9 +274,8 @@
                             </div>
                         </div>
 
-                        <!-- UPDATED BUTTON: Single Button Opening Modal (No WhatsApp) -->
                         <div>
-                            <button onclick="openInquiryModal('land')" class="w-full py-4 bg-white text-stealthBg font-mono font-bold text-xs uppercase tracking-widest rounded-xl hover:bg-platinumAccent transition-all text-center">
+                            <button onclick="openInquiryModal('land')" class="w-full py-3.5 sm:py-4 bg-white text-stealthBg font-mono font-bold text-xs uppercase tracking-widest rounded-xl hover:bg-platinumAccent transition-all text-center">
                                 Request Dossier / Application
                             </button>
                         </div>
@@ -282,149 +283,185 @@
                 </div>
             </div>
 
-            <!-- PORTFOLIO GRID SHOWCASE (CARDS NOW TRIGGER DETAILED POP-UP MODAL) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" id="portfolio-grid">
+            <!-- PORTFOLIO GRID SHOWCASE -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16" id="portfolio-grid">
                 
-                <!-- CARD 1: Commercial -->
+                <!-- CARD 1: Commercial Colombo -->
                 <div onclick="openPropertyDetail(0)" class="property-card commercial glass-stealth rounded-2xl overflow-hidden glass-stealth-hover border border-stealthBorder flex flex-col justify-between group cursor-pointer">
                     <div>
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop" alt="Metropolitan Commercial Plot" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
+                        <div class="h-56 sm:h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=800&auto=format&fit=crop" alt="Colombo Commercial Plot" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-stealthCard via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
-                                URBAN CORE • 2.4 ACRES
+                            <span class="absolute top-4 left-4 text-[9px] sm:text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
+                                COLOMBO 03 • 2.4 ACRES
                             </span>
                         </div>
-                        <div class="p-6">
+                        <div class="p-5 sm:p-6">
                             <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Commercial High-Rise</span>
-                            <h3 class="text-xl font-bold text-white mb-2">CBD Sky-Tower Plot</h3>
-                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-6">
-                                Prime corner parcel zoned for high-density mixed-use development, office towers, or luxury residential units.
+                            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Colombo Port City View Plot</h3>
+                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-4">
+                                Prime corner parcel zoned for high-density mixed-use development, luxury hotel, or commercial tower in Colombo.
                             </p>
+                            <div class="pt-2 border-t border-stealthBorder/40">
+                                <span class="text-[10px] font-mono text-platinumMuted block">LOCATION ZONE</span>
+                                <a href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" onclick="event.stopPropagation();" rel="noopener noreferrer" class="text-xs text-blue-400 hover:underline font-mono inline-flex items-center gap-1 mt-0.5">
+                                    <i class="fas fa-location-dot"></i> Galle Road, Colombo 03
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
-                        <span class="text-platinumMuted">High Density Zoning</span>
+                    <div class="p-5 sm:p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
+                        <span class="text-platinumMuted">High Density</span>
                         <span class="text-white font-bold group-hover:translate-x-1 transition-transform">View Details <i class="fas fa-arrow-right text-[10px] ml-1"></i></span>
                     </div>
                 </div>
 
-                <!-- CARD 2: Private Enclave -->
+                <!-- CARD 2: Private Enclave Wattala -->
                 <div onclick="openPropertyDetail(1)" class="property-card enclave glass-stealth rounded-2xl overflow-hidden glass-stealth-hover border border-stealthBorder flex flex-col justify-between group cursor-pointer">
                     <div>
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Diplomatic Estate Plot" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
+                        <div class="h-56 sm:h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Wattala Villa Land" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-stealthCard via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
-                                DIPLOMATIC ZONE • PRIVATE
+                            <span class="absolute top-4 left-4 text-[9px] sm:text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
+                                WATTALA • 1.8 ACRES
                             </span>
                         </div>
-                        <div class="p-6">
+                        <div class="p-5 sm:p-6">
                             <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Private Enclave</span>
-                            <h3 class="text-xl font-bold text-white mb-2">Cinnamon Grove Compound</h3>
-                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-6">
-                                Fully secluded residential compound plot surrounded by diplomatic residences with maximum security perimeter.
+                            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Wattala Canal-Side Estate Land</h3>
+                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-4">
+                                Secluded residential land parcel along Hamilton Canal in Wattala, perfect for private luxury compound or luxury villas.
                             </p>
+                            <div class="pt-2 border-t border-stealthBorder/40">
+                                <span class="text-[10px] font-mono text-platinumMuted block">LOCATION ZONE</span>
+                                <a href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" onclick="event.stopPropagation();" rel="noopener noreferrer" class="text-xs text-blue-400 hover:underline font-mono inline-flex items-center gap-1 mt-0.5">
+                                    <i class="fas fa-location-dot"></i> Canal Road, Wattala
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
+                    <div class="p-5 sm:p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
                         <span class="text-platinumMuted">Off-Market Title</span>
                         <span class="text-white font-bold group-hover:translate-x-1 transition-transform">View Details <i class="fas fa-arrow-right text-[10px] ml-1"></i></span>
                     </div>
                 </div>
 
-                <!-- CARD 3: Enclave / Eco -->
-                <div onclick="openPropertyDetail(2)" class="property-card enclave glass-stealth rounded-2xl overflow-hidden glass-stealth-hover border border-stealthBorder flex flex-col justify-between group cursor-pointer">
+                <!-- CARD 3: Office Spaces Colombo -->
+                <div onclick="openPropertyDetail(2)" class="property-card office glass-stealth rounded-2xl overflow-hidden glass-stealth-hover border border-stealthBorder flex flex-col justify-between group cursor-pointer">
                     <div>
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800&auto=format&fit=crop" alt="Highland Plantation Land" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
+                        <div class="h-56 sm:h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop" alt="Colombo Office Space" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-stealthCard via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
-                                HIGHLANDS • 45 ACRES
+                            <span class="absolute top-4 left-4 text-[9px] sm:text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
+                                COLOMBO 02 • 15,000 SQFT
                             </span>
                         </div>
-                        <div class="p-6">
-                            <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Eco-Tourism & Wellness</span>
-                            <h3 class="text-xl font-bold text-white mb-2">Cloud Forest Estate</h3>
-                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-6">
-                                Elevated mountain terrain with natural waterfalls and panoramic views, ideal for luxury eco-resorts or retreats.
+                        <div class="p-5 sm:p-6">
+                            <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Corporate Office Space</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Union Place Executive Tower Floor</h3>
+                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-4">
+                                Premium Grade-A office floor with panoramic views of Beira Lake. Fully fitted with executive suites and high-speed fiber connectivity.
                             </p>
+                            <div class="pt-2 border-t border-stealthBorder/40">
+                                <span class="text-[10px] font-mono text-platinumMuted block">LOCATION ZONE</span>
+                                <a href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" onclick="event.stopPropagation();" rel="noopener noreferrer" class="text-xs text-blue-400 hover:underline font-mono inline-flex items-center gap-1 mt-0.5">
+                                    <i class="fas fa-location-dot"></i> Union Place, Colombo 02
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
-                        <span class="text-platinumMuted">Agricultural/Tourism</span>
+                    <div class="p-5 sm:p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
+                        <span class="text-platinumMuted">Grade-A Office</span>
                         <span class="text-white font-bold group-hover:translate-x-1 transition-transform">View Details <i class="fas fa-arrow-right text-[10px] ml-1"></i></span>
                     </div>
                 </div>
 
-                <!-- CARD 4: Coastal -->
+                <!-- CARD 4: Coastal Wattala -->
                 <div onclick="openPropertyDetail(3)" class="property-card coastal glass-stealth rounded-2xl overflow-hidden glass-stealth-hover border border-stealthBorder flex flex-col justify-between group cursor-pointer">
                     <div>
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" alt="Cliff Villa Land" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
+                        <div class="h-56 sm:h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" alt="Wattala Beachfront Land" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-stealthCard via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
-                                COASTAL CLIFF • 6 ACRES
+                            <span class="absolute top-4 left-4 text-[9px] sm:text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
+                                WATTALA BEACH • 5.5 ACRES
                             </span>
                         </div>
-                        <div class="p-6">
-                            <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Oceanfront Cliff</span>
-                            <h3 class="text-xl font-bold text-white mb-2">Apex Cliffside Ridge</h3>
-                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-6">
-                                High-elevation cliff plot offering uninterrupted sunset views over the ocean for ultra-luxury villas.
+                        <div class="p-5 sm:p-6">
+                            <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Oceanfront Land</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Pegasus Reef Coastal Land</h3>
+                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-4">
+                                Prime beachfront parcel near Wattala beach line with excellent main-road access to Colombo city center and airport.
                             </p>
+                            <div class="pt-2 border-t border-stealthBorder/40">
+                                <span class="text-[10px] font-mono text-platinumMuted block">LOCATION ZONE</span>
+                                <a href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" onclick="event.stopPropagation();" rel="noopener noreferrer" class="text-xs text-blue-400 hover:underline font-mono inline-flex items-center gap-1 mt-0.5">
+                                    <i class="fas fa-location-dot"></i> Hendala Beach Road, Wattala
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
-                        <span class="text-platinumMuted">Boutique Hotel/Villa</span>
+                    <div class="p-5 sm:p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
+                        <span class="text-platinumMuted">Resort Zoning</span>
                         <span class="text-white font-bold group-hover:translate-x-1 transition-transform">View Details <i class="fas fa-arrow-right text-[10px] ml-1"></i></span>
                     </div>
                 </div>
 
-                <!-- CARD 5: Commercial -->
+                <!-- CARD 5: Commercial Industrial Wattala -->
                 <div onclick="openPropertyDetail(4)" class="property-card commercial glass-stealth rounded-2xl overflow-hidden glass-stealth-hover border border-stealthBorder flex flex-col justify-between group cursor-pointer">
                     <div>
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" alt="Logistics Park Land" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
+                        <div class="h-56 sm:h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" alt="Wattala Commercial Warehousing" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-stealthCard via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
-                                INDUSTRIAL HUB • 32 ACRES
+                            <span class="absolute top-4 left-4 text-[9px] sm:text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
+                                WATTALA HUB • 12 ACRES
                             </span>
                         </div>
-                        <div class="p-6">
-                            <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Industrial Logistics</span>
-                            <h3 class="text-xl font-bold text-white mb-2">Expressway Logistics Hub</h3>
-                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-6">
-                                Strategic industrial acreage adjacent to key expressway arterial links and international port access.
+                        <div class="p-5 sm:p-6">
+                            <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Commercial Logistics</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Colombo Highway Link Hub</h3>
+                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-4">
+                                Strategic industrial commercial land right off the Colombo - Katunayake Expressway interchange in Wattala.
                             </p>
+                            <div class="pt-2 border-t border-stealthBorder/40">
+                                <span class="text-[10px] font-mono text-platinumMuted block">LOCATION ZONE</span>
+                                <a href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" onclick="event.stopPropagation();" rel="noopener noreferrer" class="text-xs text-blue-400 hover:underline font-mono inline-flex items-center gap-1 mt-0.5">
+                                    <i class="fas fa-location-dot"></i> Expressway Interchange, Wattala
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
-                        <span class="text-platinumMuted">Heavy Industrial</span>
+                    <div class="p-5 sm:p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
+                        <span class="text-platinumMuted">Logistics & Commercial</span>
                         <span class="text-white font-bold group-hover:translate-x-1 transition-transform">View Details <i class="fas fa-arrow-right text-[10px] ml-1"></i></span>
                     </div>
                 </div>
 
-                <!-- CARD 6: Coastal / Enclave -->
-                <div onclick="openPropertyDetail(5)" class="property-card coastal enclave glass-stealth rounded-2xl overflow-hidden glass-stealth-hover border border-stealthBorder flex flex-col justify-between group cursor-pointer">
+                <!-- CARD 6: Office Space Wattala -->
+                <div onclick="openPropertyDetail(5)" class="property-card office glass-stealth rounded-2xl overflow-hidden glass-stealth-hover border border-stealthBorder flex flex-col justify-between group cursor-pointer">
                     <div>
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800&auto=format&fit=crop" alt="Lakeside Sanctuary" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
+                        <div class="h-56 sm:h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=800&auto=format&fit=crop" alt="Wattala Office Building" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-stealthCard via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
-                                WATERFRONT • 10 ACRES
+                            <span class="absolute top-4 left-4 text-[9px] sm:text-[10px] font-mono font-bold px-3 py-1 bg-stealthBg/90 text-white border border-stealthBorder rounded-md uppercase tracking-widest">
+                                WATTALA TOWN • 8,500 SQFT
                             </span>
                         </div>
-                        <div class="p-6">
-                            <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Serene Luxury</span>
-                            <h3 class="text-xl font-bold text-white mb-2">Lakeside Lagoon Estate</h3>
-                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-6">
-                                Expansive private lakefront parcel suited for gated community development or private wellness estate.
+                        <div class="p-5 sm:p-6">
+                            <span class="text-[10px] font-mono text-platinumMuted uppercase tracking-widest block mb-1">Office Building</span>
+                            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Negombo Road Commercial HQ</h3>
+                            <p class="text-xs text-platinumMuted leading-relaxed font-light mb-4">
+                                Multi-story modern office space facing main Negombo Road in Wattala. Ideal for bank branches, IT hubs, or regional corporate headquarters.
                             </p>
+                            <div class="pt-2 border-t border-stealthBorder/40">
+                                <span class="text-[10px] font-mono text-platinumMuted block">LOCATION ZONE</span>
+                                <a href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" onclick="event.stopPropagation();" rel="noopener noreferrer" class="text-xs text-blue-400 hover:underline font-mono inline-flex items-center gap-1 mt-0.5">
+                                    <i class="fas fa-location-dot"></i> Negombo Road, Wattala
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
-                        <span class="text-platinumMuted">Waterfront Residential</span>
+                    <div class="p-5 sm:p-6 pt-0 font-mono text-xs border-t border-stealthBorder/40 flex justify-between items-center mt-auto">
+                        <span class="text-platinumMuted">Corporate Facility</span>
                         <span class="text-white font-bold group-hover:translate-x-1 transition-transform">View Details <i class="fas fa-arrow-right text-[10px] ml-1"></i></span>
                     </div>
                 </div>
@@ -432,15 +469,15 @@
             </div>
 
             <!-- PRIVATE CATALOG BANNER CALLOUT -->
-            <div class="glass-stealth rounded-3xl p-8 lg:p-12 border border-stealthBorder text-center relative overflow-hidden">
+            <div class="glass-stealth rounded-3xl p-6 sm:p-12 border border-stealthBorder text-center relative overflow-hidden">
                 <div class="max-w-2xl mx-auto z-10 relative">
                     <span class="text-xs font-mono text-platinumMuted uppercase tracking-widest block mb-2">COMPLETE ASSET INVENTORY</span>
-                    <h2 class="text-3xl font-bold text-white mb-4">Need Access to Off-Market Land Deals?</h2>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Need Access to Off-Market Land Deals in Sri Lanka?</h2>
                     <p class="text-platinumMuted text-xs font-light leading-relaxed mb-8">
-                        Our full land database contains active price valuations, legal title status, surveyor blueprints, and confidential seller profiles.
+                        Our full land database contains active price valuations, legal title status, surveyor blueprints, and confidential seller profiles across Colombo and Wattala.
                     </p>
-                    <a href="https://docs.google.com/forms" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-stealthBg font-mono font-bold rounded-xl hover:bg-platinumAccent transition-all uppercase tracking-widest text-xs shadow-2xl">
-                        <i class="fas fa-[#4285F4] fa-wpforms"></i> Fill Acquisition Form Online
+                    <a href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-stealthBg font-mono font-bold rounded-xl hover:bg-platinumAccent transition-all uppercase tracking-widest text-xs shadow-2xl">
+                        <i class="fas fa-file-lines text-blue-600"></i> Fill Acquisition Form Online
                     </a>
                 </div>
             </div>
@@ -448,131 +485,49 @@
         </div>
     </main>
 
-    <!-- PAGE 3: PERFORMANCE JOURNAL & ATHLETICS -->
-    <main id="training" class="page-view pt-28 pb-20 flex-grow">
-        <div class="max-w-7xl mx-auto px-6 mb-12">
-            <span class="text-xs font-mono text-platinumMuted uppercase tracking-widest block mb-2">Athletic Journal & Milestones</span>
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Performance <span class="text-platinumMuted font-light">& Discipline</span></h1>
-            <p class="text-platinumMuted font-light text-base mb-8 max-w-2xl leading-relaxed">
-                High-stakes advisory demands sharp mental resilience, intense physical conditioning, and relentless endurance.
-            </p>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 font-mono">
-            <div class="glass-stealth p-6 rounded-2xl border border-stealthBorder">
-                <span class="text-xs text-platinumMuted uppercase tracking-widest block mb-2">Combat Record</span>
-                <p class="text-4xl font-bold text-white mb-1">8 - 0 - 0</p>
-                <p class="text-xs text-platinumMuted font-sans font-light">Undefeated Amateur Striking Record</p>
-            </div>
-
-            <div class="glass-stealth p-6 rounded-2xl border border-stealthBorder">
-                <span class="text-xs text-platinumMuted uppercase tracking-widest block mb-2">Total Distance Logged</span>
-                <p class="text-4xl font-bold text-white mb-1">1,420 <span class="text-lg font-sans text-platinumMuted">KM</span></p>
-                <p class="text-xs text-platinumMuted font-sans font-light">Annual Roadwork & Cycling Metric</p>
-            </div>
-
-            <div class="glass-stealth p-6 rounded-2xl border border-stealthBorder">
-                <span class="text-xs text-platinumMuted uppercase tracking-widest block mb-2">Peak Race Pace</span>
-                <p class="text-4xl font-bold text-white mb-1">3:52 <span class="text-lg font-sans text-platinumMuted">/KM</span></p>
-                <p class="text-xs text-platinumMuted font-sans font-light">10KM Road Race Benchmark</p>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div class="glass-stealth rounded-2xl overflow-hidden border border-stealthBorder group">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1517649763962-0c623266010b?q=80&w=800&auto=format&fit=crop" alt="Boxing Sparring" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-all duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-stealthBg via-transparent to-transparent"></div>
-                </div>
-                <div class="p-6">
-                    <div class="flex justify-between items-center mb-2 font-mono">
-                        <span class="text-xs text-platinumMuted uppercase">Fight Preparation</span>
-                        <span class="text-xs text-platinumMuted">Journal #042</span>
-                    </div>
-                    <h3 class="text-xl font-semibold text-white mb-2">12-Round High-Intensity Sparring</h3>
-                    <p class="text-xs text-platinumMuted leading-relaxed font-light">
-                        Conditioning and timing drills ahead of camp. Focused on ring control, defensive composure, and pacing under fatigue.
-                    </p>
-                </div>
-            </div>
-
-            <div class="glass-stealth rounded-2xl p-6 border border-stealthBorder flex flex-col justify-between">
-                <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <span class="text-xs font-mono uppercase text-platinumMuted">Strava Session Visualizer</span>
-                        <i class="fab fa-strava text-xl text-[#fc4c02]"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-2">Coastal 21KM Half Marathon</h3>
-                    <p class="text-xs text-platinumMuted mb-6 font-light">
-                        Early morning roadwork route along coastal highway.
-                    </p>
-                    
-                    <div class="w-full h-32 bg-stealthBg rounded-xl border border-stealthBorder p-4 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#3b4252_1px,transparent_1px)] [background-size:16px_16px]"></div>
-                        <svg class="w-full h-20 text-platinumMuted opacity-80" viewBox="0 0 300 80" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M10,60 Q50,10 100,40 T200,30 T290,50" stroke-dasharray="4,4" />
-                            <circle cx="10" cy="60" r="4" fill="#fc4c02" />
-                            <circle cx="290" cy="50" r="4" fill="#ffffff" />
-                        </svg>
-                    </div>
-                </div>
-
-                <div class="mt-6 pt-4 border-t border-stealthBorder flex justify-between items-center font-mono">
-                    <div class="text-xs">
-                        <span class="text-platinumMuted block">Avg Heart Rate</span>
-                        <span class="text-white font-bold">164 BPM</span>
-                    </div>
-                    <a href="https://www.strava.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#fc4c02]/10 text-[#fc4c02] border border-[#fc4c02]/30 rounded-lg text-xs hover:bg-[#fc4c02] hover:text-white transition-all">
-                        View Route on Strava
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- DIRECT INQUIRY MODAL (UPDATED WITH GOOGLE FORM BUTTON) -->
-    <div id="inquiry-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md hidden transition-opacity">
-        <div class="glass-stealth border border-stealthBorder max-w-lg w-full mx-4 p-8 rounded-2xl relative shadow-2xl">
+    <!-- DIRECT INQUIRY MODAL -->
+    <div id="inquiry-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md hidden transition-opacity p-4">
+        <div class="glass-stealth border border-stealthBorder max-w-lg w-full p-6 sm:p-8 rounded-2xl relative shadow-2xl">
             <button onclick="closeInquiryModal()" class="absolute top-4 right-4 text-platinumMuted hover:text-white p-2">
                 <i class="fas fa-xmark text-lg"></i>
             </button>
-            <h3 class="text-2xl font-bold text-white mb-2">Direct Advisory Inquiry</h3>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Direct Advisory Inquiry</h3>
             <p class="text-xs text-platinumMuted mb-6 font-light">
                 Select your preferred consultation channel below. Confidential response guaranteed within 12 hours.
             </p>
 
             <div class="space-y-3 font-mono">
                 <!-- Google Form Button -->
-                <a href="https://docs.google.com/forms" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl bg-stealthBg border border-stealthBorder hover:border-purple-500/50 transition-all group">
+                <a href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl bg-stealthBg border border-stealthBorder hover:border-purple-500/50 transition-all group">
                     <div class="flex items-center gap-3">
                         <i class="fas fa-file-signature text-xl text-purple-400"></i>
                         <div>
-                            <p class="text-xs text-white font-bold">Buy Your Own House / Land</p>
+                            <p class="text-xs text-white font-bold">Buy Your Own House / Land / Office Space</p>
                             <p class="text-[10px] text-platinumMuted">Submit Acquisition Form</p>
                         </div>
                     </div>
                     <i class="fas fa-chevron-right text-xs text-platinumMuted group-hover:text-white"></i>
                 </a>
 
-                <!-- WhatsApp Button (Controlled dynamically via JS) -->
-                <a id="whatsapp-modal-option" href="https://wa.me/94740396992" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl bg-stealthBg border border-stealthBorder hover:border-emerald-500/50 transition-all group">
+                <!-- WhatsApp Button -->
+                <a id="whatsapp-modal-option" href="https://wa.me/94764860557" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl bg-stealthBg border border-stealthBorder hover:border-emerald-500/50 transition-all group">
                     <div class="flex items-center gap-3">
                         <i class="fab fa-whatsapp text-2xl text-emerald-400"></i>
                         <div>
                             <p class="text-xs text-white font-bold">WhatsApp Direct</p>
-                            <p class="text-[10px] text-platinumMuted">+94 74 039 6992</p>
+                            <p class="text-[10px] text-platinumMuted">+94 76 486 0557</p>
                         </div>
                     </div>
                     <i class="fas fa-chevron-right text-xs text-platinumMuted group-hover:text-white"></i>
                 </a>
 
-                <!-- Calendly Button -->
+                <!-- Calendar Link -->
                 <a href="https://calendar.app.google/KMNc9qFppPY4mMhZ6" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-xl bg-stealthBg border border-stealthBorder hover:border-blue-500/50 transition-all group">
                     <div class="flex items-center gap-3">
                         <i class="far fa-calendar-alt text-2xl text-blue-400"></i>
                         <div>
                             <p class="text-xs text-white font-bold">Book Advisory Meeting</p>
-                            <p class="text-[10px] text-platinumMuted">Schedule via Calendly</p>
+                            <p class="text-[10px] text-platinumMuted">Schedule Appointment via Google Calendar</p>
                         </div>
                     </div>
                     <i class="fas fa-chevron-right text-xs text-platinumMuted group-hover:text-white"></i>
@@ -593,30 +548,30 @@
         </div>
     </div>
 
-    <!-- PROPERTY DETAIL POP-UP MODAL (EXPANDED LAND / HOUSE VIEW) -->
+    <!-- PROPERTY DETAIL POP-UP MODAL -->
     <div id="property-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-lg hidden transition-opacity p-4 overflow-y-auto">
         <div class="glass-stealth border border-stealthBorder max-w-4xl w-full rounded-3xl relative shadow-2xl overflow-hidden my-8">
-            <button onclick="closePropertyModal()" class="absolute top-6 right-6 z-20 w-10 h-10 rounded-full bg-stealthBg/80 border border-stealthBorder text-white hover:border-white transition-all flex items-center justify-center">
+            <button onclick="closePropertyModal()" class="absolute top-4 right-4 sm:top-6 sm:right-6 z-20 w-10 h-10 rounded-full bg-stealthBg/80 border border-stealthBorder text-white hover:border-white transition-all flex items-center justify-center">
                 <i class="fas fa-xmark text-lg"></i>
             </button>
 
             <div class="grid grid-cols-1 lg:grid-cols-12">
                 <!-- Image Side -->
-                <div class="lg:col-span-6 relative min-h-[300px] lg:min-h-[480px]">
+                <div class="lg:col-span-6 relative min-h-[250px] lg:min-h-[480px]">
                     <img id="modal-prop-image" src="" alt="Property Preview" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-stealthBg via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-stealthBg"></div>
-                    <span id="modal-prop-tag" class="absolute top-6 left-6 px-3.5 py-1.5 bg-stealthBg/90 backdrop-blur-md text-white border border-stealthBorder rounded-lg text-[10px] font-mono uppercase tracking-widest font-bold">
+                    <span id="modal-prop-tag" class="absolute top-4 left-4 sm:top-6 sm:left-6 px-3.5 py-1.5 bg-stealthBg/90 backdrop-blur-md text-white border border-stealthBorder rounded-lg text-[9px] sm:text-[10px] font-mono uppercase tracking-widest font-bold">
                     </span>
                 </div>
 
                 <!-- Info Side -->
-                <div class="lg:col-span-6 p-8 lg:p-10 flex flex-col justify-between bg-stealthCard/90">
+                <div class="lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col justify-between bg-stealthCard/90">
                     <div>
                         <span id="modal-prop-category" class="text-xs font-mono text-platinumMuted uppercase tracking-widest block mb-2"></span>
-                        <h2 id="modal-prop-title" class="text-3xl font-bold text-white mb-4"></h2>
+                        <h2 id="modal-prop-title" class="text-2xl sm:text-3xl font-bold text-white mb-4"></h2>
                         <p id="modal-prop-desc" class="text-platinumMuted text-xs font-light leading-relaxed mb-6"></p>
 
-                        <div class="grid grid-cols-2 gap-4 border-y border-stealthBorder/60 py-4 mb-8 font-mono text-xs">
+                        <div class="grid grid-cols-2 gap-4 border-y border-stealthBorder/60 py-4 mb-6 font-mono text-xs">
                             <div>
                                 <span class="text-platinumMuted block text-[10px] uppercase">Zoning / Type</span>
                                 <span id="modal-prop-zoning" class="text-white font-bold"></span>
@@ -625,9 +580,11 @@
                                 <span class="text-platinumMuted block text-[10px] uppercase">Acreage / Area</span>
                                 <span id="modal-prop-acreage" class="text-white font-bold"></span>
                             </div>
-                            <div>
-                                <span class="text-platinumMuted block text-[10px] uppercase">Location Zone</span>
-                                <span id="modal-prop-location" class="text-white font-bold"></span>
+                            <div class="col-span-2">
+                                <span class="text-platinumMuted block text-[10px] uppercase">Location Zone Link</span>
+                                <a id="modal-prop-location-link" href="https://forms.gle/7EX8SuT2Do4eVQnc9" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-400 hover:underline font-bold inline-flex items-center gap-1.5 mt-1">
+                                    <i class="fas fa-location-dot"></i> <span id="modal-prop-location"></span>
+                                </a>
                             </div>
                             <div>
                                 <span class="text-platinumMuted block text-[10px] uppercase">Title Status</span>
@@ -636,7 +593,7 @@
                         </div>
                     </div>
 
-                    <button onclick="closePropertyModal(); openInquiryModal('land');" class="w-full py-4 bg-white text-stealthBg font-mono font-bold text-xs uppercase tracking-widest rounded-xl hover:bg-platinumAccent transition-all text-center">
+                    <button onclick="closePropertyModal(); openInquiryModal('land');" class="w-full py-3.5 sm:py-4 bg-white text-stealthBg font-mono font-bold text-xs uppercase tracking-widest rounded-xl hover:bg-platinumAccent transition-all text-center">
                         Request Full Dossier / Acquire
                     </button>
                 </div>
@@ -646,80 +603,80 @@
 
     <!-- FOOTER -->
     <footer class="border-t border-stealthBorder bg-stealthBg py-8">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs font-mono text-platinumMuted gap-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center text-xs font-mono text-platinumMuted gap-4">
             <p>&copy; 2026 Elkan Sheal Samuel. All Rights Reserved.</p>
-            <p class="uppercase tracking-widest text-[10px]">Real Estate Advisory & Investments</p>
+            <p class="uppercase tracking-widest text-[10px]">Real Estate Advisory & Investments • Colombo & Wattala, Sri Lanka</p>
         </div>
     </footer>
 
     <!-- Interactive Script -->
     <script>
-        // Property Database for Pop-ups
+        // Property Database for Pop-ups in Sri Lanka (Colombo & Wattala)
         const propertiesData = [
             {
-                title: "CBD Sky-Tower Plot",
+                title: "Colombo Port City View Plot",
                 category: "Commercial High-Rise",
-                tag: "URBAN CORE • 2.4 ACRES",
-                image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
-                desc: "Prime corner parcel in the heart of the central business district. Zoned for high-density mixed-use development, headquarters office towers, or commercial luxury real estate.",
+                tag: "COLOMBO 03 • 2.4 ACRES",
+                image: "https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=1200&auto=format&fit=crop",
+                desc: "Prime corner parcel in Colombo 03 overlooking Port City and Galle Face Green. Zoned for high-density mixed-use development, commercial headquarters, or luxury commercial towers.",
                 zoning: "Commercial / High-Rise",
                 acreage: "2.4 Prime Acres",
-                location: "Central Business Core",
+                location: "Galle Road, Colombo 03, Sri Lanka",
                 status: "Clear Title Verified"
             },
             {
-                title: "Cinnamon Grove Compound",
+                title: "Wattala Canal-Side Estate Land",
                 category: "Private Enclave",
-                tag: "DIPLOMATIC ZONE • PRIVATE",
+                tag: "WATTALA • 1.8 ACRES",
                 image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-                desc: "Fully secluded residential compound surrounded by high-level diplomatic residences. Features maximum privacy, perimeter security clearance, and expansive mature greenery.",
+                desc: "Fully secluded residential land parcel running along Hamilton Canal in Wattala. Ideal for private gated luxury villas or residential compound.",
                 zoning: "Private Residential",
-                acreage: "1.8 Acres Compound",
-                location: "Diplomatic Sector",
+                acreage: "1.8 Acres Plot",
+                location: "Canal Road, Wattala, Sri Lanka",
                 status: "Off-Market Secured"
             },
             {
-                title: "Cloud Forest Estate",
-                category: "Eco-Tourism & Wellness",
-                tag: "HIGHLANDS • 45 ACRES",
-                image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop",
-                desc: "High-altitude mountain terrain complete with natural mountain streams, waterfalls, and panoramic valley views. Pre-approved for luxury eco-resorts or private health sanctuaries.",
-                zoning: "Tourism / Agriculture",
-                acreage: "45.0 Clear Acres",
-                location: "Central Highlands",
-                status: "Verified Title"
+                title: "Union Place Executive Tower Floor",
+                category: "Corporate Office Space",
+                tag: "COLOMBO 02 • 15,000 SQFT",
+                image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+                desc: "Grade-A office floor space located in Union Place, Colombo 02. Outfitted with high-speed telecom links, modern conference suites, and dedicated parking.",
+                zoning: "Office Commercial",
+                acreage: "15,000 Sq. Ft.",
+                location: "Union Place, Colombo 02, Sri Lanka",
+                status: "Ready for Lease / Purchase"
             },
             {
-                title: "Apex Cliffside Ridge",
-                category: "Oceanfront Cliff",
-                tag: "COASTAL CLIFF • 6 ACRES",
+                title: "Pegasus Reef Coastal Land",
+                category: "Oceanfront Land",
+                tag: "WATTALA BEACH • 5.5 ACRES",
                 image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
-                desc: "Elevated sea-cliff parcel with dramatic ocean sunset vistas. Ideal for ultra-luxury private boutique villas or high-end hospitality boutique development.",
+                desc: "Elevated coastal parcel with direct beach access in Wattala. Ideal for hospitality projects, boutique beach resorts, or commercial development.",
                 zoning: "Boutique Resort/Villa",
-                acreage: "6.2 Cliffside Acres",
-                location: "Western Shoreline",
+                acreage: "5.5 Acres",
+                location: "Hendala Beach Road, Wattala, Sri Lanka",
                 status: "Verified Title"
             },
             {
-                title: "Expressway Logistics Hub",
-                category: "Industrial Logistics",
-                tag: "INDUSTRIAL HUB • 32 ACRES",
-                image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
-                desc: "Strategic industrial acreage directly connected to primary expressway arterial networks and international shipping ports. Ideal for warehousing or light manufacturing.",
-                zoning: "Heavy Industrial",
-                acreage: "32.0 Acres",
-                location: "Logistics Corridor",
+                title: "Colombo Highway Link Hub",
+                category: "Commercial Logistics",
+                tag: "WATTALA HUB • 12 ACRES",
+                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop",
+                desc: "Strategic industrial and commercial land parcel adjacent to the Colombo - Katunayake Expressway entrance in Wattala.",
+                zoning: "Commercial / Logistics",
+                acreage: "12.0 Acres",
+                location: "Expressway Interchange, Wattala, Sri Lanka",
                 status: "Zoned & Approved"
             },
             {
-                title: "Lakeside Lagoon Estate",
-                category: "Serene Luxury",
-                tag: "WATERFRONT • 10 ACRES",
-                image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop",
-                desc: "Tranquil freshwater lagoon frontage parcel providing an exceptional environment for gated luxury residential communities, private estates, or wellness retreats.",
-                zoning: "Waterfront Residential",
-                acreage: "10.5 Acres",
-                location: "Southern Lakes",
+                title: "Negombo Road Commercial HQ",
+                category: "Office Building",
+                tag: "WATTALA TOWN • 8,500 SQFT",
+                image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1200&auto=format&fit=crop",
+                desc: "Prime multi-story commercial office building in central Wattala facing main Negombo Road with prime road frontage and private parking.",
+                zoning: "Office & Retail",
+                acreage: "8,500 Sq. Ft.",
+                location: "Negombo Road, Wattala, Sri Lanka",
                 status: "Verified Title"
             }
         ];
@@ -747,15 +704,24 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Category Filter Logic
+        // Category Filter Logic (Fixed scroll jump + hero showcase hide behavior)
         function filterCategory(category, button) {
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => {
-                btn.className = 'filter-btn px-4 py-2 rounded-lg glass-stealth text-platinumMuted hover:text-white border border-stealthBorder transition-all';
+                btn.className = 'filter-btn px-3 sm:px-4 py-2 rounded-lg glass-stealth text-platinumMuted hover:text-white border border-stealthBorder transition-all';
             });
-            button.className = 'filter-btn px-4 py-2 rounded-lg bg-white text-stealthBg font-semibold shadow-lg transition-all';
+            button.className = 'filter-btn px-3 sm:px-4 py-2 rounded-lg bg-white text-stealthBg font-semibold shadow-lg transition-all';
 
-            const cards = document.querySelectorAll('.property-card');
+            // Show/Hide Flagship Hero card based on category selection
+            const flagshipHero = document.getElementById('flagship-hero-card');
+            if (category === 'all') {
+                flagshipHero.style.display = 'block';
+            } else {
+                flagshipHero.style.display = 'none';
+            }
+
+            // Filter portfolio grid items
+            const cards = document.querySelectorAll('.property-card:not(#flagship-hero-card)');
             cards.forEach(card => {
                 if (category === 'all' || card.classList.contains(category)) {
                     card.classList.remove('hidden-card');
@@ -763,14 +729,9 @@
                     card.classList.add('hidden-card');
                 }
             });
-
-            const grid = document.getElementById('portfolio-grid');
-            if (grid) {
-                grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
         }
 
-        // Open Modal with Context (Hides WhatsApp when clicked from Land actions)
+        // Open Modal with Context
         function openInquiryModal(context = 'all') {
             const modal = document.getElementById('inquiry-modal');
             const whatsappOption = document.getElementById('whatsapp-modal-option');
